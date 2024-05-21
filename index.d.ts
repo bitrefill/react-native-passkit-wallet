@@ -11,6 +11,7 @@ declare class PassKit {
     context?: Object,
   ): EmitterSubscription;
   static removeEventListener(eventType: string, listener: Function): void;
+  static containsPass(base64Encoded: string): Promise<boolean>;
 }
 
 interface AddPassButtonProps extends ViewProperties {
